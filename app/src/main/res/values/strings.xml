@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Onboarding</string>
+    <string name="on_boarding_next_btn">Siguiente</string>
+    <string name="on_boarding_first_content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id varius orci. Duis ac
+        efficitur ligula. In eget vehicula ligula. Vivamus dapibus eu nibh eget semper.
+    </string>
+    <string name="on_boarding_second_content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id varius orci. Duis ac
+        efficitur ligula. In eget vehicula ligula. Vivamus dapibus eu nibh eget semper.
+    </string>
+</resources>

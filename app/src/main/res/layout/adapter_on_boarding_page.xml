@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <ImageView
+        android:id="@+id/ivSkip"
+        android:layout_width="@dimen/on_boarding_skip_btn_width"
+        android:layout_height="@dimen/on_boarding_skip_btn_height"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:padding="@dimen/view_aux_padding"
+        android:layout_marginTop="@dimen/half_vertical_margin"
+        android:layout_marginEnd="@dimen/lateral_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription" />
+    
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lavAnimation"
+        android:layout_width="@dimen/on_boarding_anim_view_width"
+        android:layout_height="@dimen/on_boarding_anim_view_height"
+        android:layout_marginTop="@dimen/half_vertical_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivSkip"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="@string/on_boarding_first_content"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/lateral_margin"
+        android:layout_marginTop="@dimen/half_vertical_margin"
+        android:layout_marginEnd="@dimen/lateral_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lavAnimation"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="@dimen/on_boarding_next_btn_width"
+        android:layout_height="@dimen/on_boarding_next_btn_height"
+        android:text="@string/on_boarding_next_btn"
+        android:visibility="gone"
+        android:layout_marginEnd="@dimen/lateral_margin"
+        android:layout_marginBottom="@dimen/vertical_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

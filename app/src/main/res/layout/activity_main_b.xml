@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.main.MainActivityB">
+
+    <FrameLayout
+        android:id="@+id/flFragmentTopContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginStart="@dimen/double_lateral_margin"
+        android:layout_marginTop="@dimen/double_vertical_margin"
+        android:layout_marginEnd="@dimen/double_lateral_margin"
+        android:layout_marginBottom="@dimen/vertical_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/glHorizontal50"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHorizontal50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <FrameLayout
+        android:id="@+id/flFragmentBottomContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginStart="@dimen/double_lateral_margin"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:layout_marginEnd="@dimen/double_lateral_margin"
+        android:layout_marginBottom="@dimen/double_vertical_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/glHorizontal50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/arrow_down_float"
+        app:layout_constraintStart_toStartOf="@id/flFragmentBottomContainer"
+        app:layout_constraintEnd_toStartOf="@id/flFragmentBottomContainer"
+        app:layout_constraintTop_toBottomOf="@id/flFragmentBottomContainer"
+        app:layout_constraintBottom_toBottomOf="@id/flFragmentBottomContainer"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

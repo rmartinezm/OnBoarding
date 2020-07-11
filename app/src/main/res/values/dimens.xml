@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- MARGIN -->
+    <!-- Lateral -->
+    <dimen name="half_lateral_margin">8dp</dimen>
+    <dimen name="lateral_margin">16dp</dimen>
+    <dimen name="double_lateral_margin">32dp</dimen>
+    <!-- Vertical -->
+    <dimen name="half_vertical_margin">17dp</dimen>
+    <dimen name="vertical_margin">34dp</dimen>
+    <dimen name="double_vertical_margin">68dp</dimen>
+
+    <!-- VIEW -->
+    <dimen name="view_aux_padding">6dp</dimen>
+
+    <!-- ON_BOARDING -->
+    <!-- Activity -->
+    <dimen name="on_boarding_dot_size">8dp</dimen>
+    <!-- Adapter -->
+    <dimen name="on_boarding_skip_btn_width">70dp</dimen>
+    <dimen name="on_boarding_skip_btn_height">70dp</dimen>
+    <dimen name="on_boarding_anim_view_width">220dp</dimen>
+    <dimen name="on_boarding_anim_view_height">220dp</dimen>
+    <dimen name="on_boarding_next_btn_width">100dp</dimen>
+    <dimen name="on_boarding_next_btn_height">60dp</dimen>
+
+</resources>
